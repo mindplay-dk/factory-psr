@@ -1,0 +1,28 @@
+{
+    "name": "mindplay/factory-psr",
+    "type": "library",
+    "license": "MIT",
+    "scripts": {
+        "test": "php test/test.php"
+    },
+    "autoload": {
+        "psr-4": {
+            "Psr\\Factories\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Psr\\Factories\\Test\\": "test/src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rasmus Schultz",
+            "email": "rasmus@mindplay.dk"
+        }
+    ],
+    "require-dev": {
+        "mindplay/testies": "^1.1",
+        "psr/container": "^2.0"
+    }
+}
